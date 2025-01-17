@@ -10,8 +10,8 @@ require 'vendor/autoload.php';
 
 use Razorpay\Api\Api;
 
-$apiKey = 'rzp_live_CEIKkk6nuGfWTF';
-$apiSecret = 'T4ruBaRZSvLJlpVIxq6qfMse';
+$apiKey = 'your api key';
+$apiSecret = 'your api secrect';
 $api = new Api($apiKey, $apiSecret);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
