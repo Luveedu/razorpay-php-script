@@ -48,8 +48,8 @@ console.log("Generated Email: " + generatedEmail);
 
 <?php
 // Razorpay API Key and Secret
-$apiKey = 'rzp_live_DRzr3ZJVfI0bFv'; // Replace with test key (rzp_test_...) for testing
-$apiSecret = 'zKKohz0CP8LKohVxdceFe1vI'; // Replace with test secret for testing
+$apiKey = 'your api key';
+$apiSecret = 'your api secrect';
 
 $api = new Api($apiKey, $apiSecret);
 
@@ -142,7 +142,7 @@ if (isset($_POST['razorpay_payment_id']) && isset($_POST['razorpay_signature']))
     if ($generatedSignature === $razorpaySignature) {
         // Payment success
         unset($_SESSION['razorpay_order_id']); // Clear session data
-        header('Location: https://payaurshop.shop/dl.php');
+        header('Location: https://example.com/dl.php');
         exit;
     } else {
         // Payment verification failed
