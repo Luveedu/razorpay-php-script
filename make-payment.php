@@ -91,7 +91,7 @@ if (isset($_POST['razorpay_payment_id']) && isset($_POST['razorpay_signature']))
     if ($generatedSignature === $razorpaySignature) {
         // Payment success
         unset($_SESSION['razorpay_order_id']);
-        header('Location: https://payaurshop.shop/dl.php');
+        header('Location: https://example.com/dl.php');
         exit;
     } else {
         // Payment verification failed
